@@ -1,0 +1,37 @@
+* babel-preset-hao
+  Base: =babel-preset-env=
+
+** Table of contents                                                  :TOC_3:
+- [[#babel-preset-hao][babel-preset-hao]]
+  - [[#usage][Usage]]
+    - [[#install][Install]]
+    - [[#extend][Extend]]
+  - [[#plugins][Plugins]]
+    - [[#decorators][Decorators]]
+
+** Usage
+   Root folder should look like this:
+
+   #+BEGIN_SRC sh
+     .
+     ├── node_modules
+     ├── package.json
+     └── .babelrc
+   #+END_SRC
+*** Install
+
+    #+BEGIN_SRC sh
+      yarn add --dev laloHao/babel#develop
+    #+END_SRC
+
+*** Extend
+    Add =.babelrc= to project root.
+
+    #+BEGIN_SRC yaml
+      {
+        "presets": ["hao"]
+      }
+    #+END_SRC
+
+** Plugins
+*** Decorators
